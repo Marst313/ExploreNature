@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'primary-btn': '#F0FF42',
+        secondary: 'rgb(var(--warna-tema)/ <alpha-value>)',
       },
     },
     fontFamily: { Inknut: ['Inknut Antiqua', 'serif'], Imk: ['IM Fell DW Pica', 'serif'] },

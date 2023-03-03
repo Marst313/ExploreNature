@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="container w-full flex justify-between  bg-opacity-20 backdrop-blur-sm ">
-      <h2 className="items-start text-center m-5 md:w-52">Navbar</h2>
+      <h2 className="items-start text-center m-5 lg:w-52 ">Navbar</h2>
 
       <Modal openNav={openNav} />
       <Menu openNav={openNav} setOpenNav={setOpenNav} />

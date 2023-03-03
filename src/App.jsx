@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import Community from './components/Community/Community';
 import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 
@@ -7,6 +7,7 @@ function App() {
     <main>
       <Navbar />
       <Hero />
+      <Community />
     </main>
   );
 }

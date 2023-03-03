@@ -7,7 +7,7 @@ const DateComponent = () => {
         <div className="location relative flex flex-col justify-center p-5 ">
           <img src="./img/location.png" className="absolute top-0 left-1 w-4" alt="location-icons" />
 
-          <h4 className="text-white text-[10px] -mt-5 font-normal   text-opacity-40 ml-1 ">Location</h4>
+          <h4 className="text-white text-[10px] lg:-mt-5 -mt-1 font-normal   text-opacity-40 ml-1 ">Location</h4>
 
           <h4 className="text-white text-[10px] mt-3 ">Wonogiri, Jawa Tengah</h4>
         </div>
