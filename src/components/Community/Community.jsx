@@ -3,9 +3,9 @@ import Social from './Social';
 
 const Community = () => {
   return (
-    <section className="w-full container mt-52 xl:mt-96 ">
+    <section id="Community" className="w-full container mt-40  xl:mt-96 ">
       <div className="flex justify-center items-center flex-col">
-        <div className=" title-community w-full flex flex-col  lg:justify-start lg:items-start lg:pl-32 ">
+        <div className=" title-section w-full flex flex-col  lg:justify-start lg:items-start lg:pl-32 ">
           <h1 className="text-center font-bold text-3xl text-secondary lg:text-6xl ">Community</h1>
           <h2 className="text-center font-bold text-2xl text-secondary/70 mr-10 -mt-5 lg:text-5xl">Community</h2>
         </div>

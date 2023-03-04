@@ -5,7 +5,7 @@ import DateComponent from './DateComponent';
 const Hero = () => {
   return (
     <div>
-      <section className="hero container w-full flex flex-col lg:flex-row-reverse lg:justify-between lg:p-20    justify-center items-center ">
+      <section className=" container w-full flex flex-col lg:flex-row-reverse lg:justify-between lg:p-20    justify-center items-center ">
         <div className="flex lg:flex-col  lg:mt-0 mt-24">
           {ImgData.map((image) => {
             const { src, name, id } = image;
