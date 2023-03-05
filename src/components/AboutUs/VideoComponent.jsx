@@ -16,9 +16,9 @@ const VideoComponent = () => {
   }, [isPlaying]);
 
   return (
-    <div className="video-container  p-5 flex justify-center items-center relative overflow-hidden   lg:ml-20 lg:w-1/2  w-10/12 ">
-      <video ref={video} src="./img/AboutUs/video/video1.mp4" className="rounded-xl -skew-x-6 "></video>
-      <div className="play-btn skew-x-3 flex  justify-center items-center group">
+    <div className="container-video">
+      <video ref={video} src="./img/AboutUs/video/video1.mp4"></video>
+      <div className="play-btn">
         <div className={`btn  ${isPlaying && 'btn-active '}`} onClick={playVideo}></div>
       </div>
     </div>
