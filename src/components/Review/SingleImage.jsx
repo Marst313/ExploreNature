@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 const SingleImage = ({ name, img, description, alt, position }) => {
   return (
-    <div className={`container-review ${position} absolute `}>
+    <div className={`container-review ${position} `}>
       <img src={img} loading="lazy" alt={alt} />
       <div>
         <h1>{name}</h1>
@@ -12,4 +12,4 @@ const SingleImage = ({ name, img, description, alt, position }) => {
   );
 };
 
-export default SingleImage;
+export default memo(SingleImage);

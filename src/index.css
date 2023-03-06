@@ -10,7 +10,7 @@
   color: var(--primary);
 }
 body {
-  @apply container mx-auto h-[100vh] w-full bg-secondary/20 bg-cover bg-center  bg-no-repeat;
+  @apply container mx-auto h-[100vh] w-full  bg-cover bg-center  bg-no-repeat;
   background-image: url('/img/bg-image.webp');
 }
 h1,
@@ -421,28 +421,28 @@ p {
 }
 
 .container-review {
-  @apply mt-10 flex flex-col items-center justify-center opacity-0 transition-all  md:mt-0 md:flex-row  lg:max-w-4xl;
+  @apply absolute  flex flex-col items-center justify-center   opacity-0 transition-all md:mt-0  md:flex-row lg:max-w-4xl;
 }
 .container-review > img {
   @apply review-card mt-10 w-36 rounded-md md:w-1/3 lg:w-52;
 }
 .container-review > div {
-  @apply center-target relative p-5;
+  @apply center-target relative;
 }
 .container-review > div > h1 {
-  @apply text-center text-2xl font-bold;
+  @apply mt-5 text-center text-xl font-bold;
 }
 .container-review > div > p {
-  @apply mt-10 p-4 text-xs font-medium leading-5 md:mt-5 md:p-10;
+  @apply mt-10 px-10 text-xs font-medium leading-5 md:mt-5 md:p-10;
 }
 .container-review > div > p::before {
-  @apply top-20 left-10 font-Inknut text-secondary;
+  @apply top-16 left-0 font-Inknut text-secondary md:left-6;
   content: '"';
   position: absolute;
   font-size: 50px;
 }
 .container-review > div > p::after {
-  @apply top-20 right-10 font-Inknut text-secondary;
+  @apply top-16 right-0 font-Inknut text-secondary md:right-6;
   content: '"';
   position: absolute;
   font-size: 50px;
@@ -456,4 +456,28 @@ p {
 }
 .previous-review {
   @apply -translate-x-full;
+}
+
+/* //! Footer */
+
+footer {
+  @apply mt-10 bg-containerAbout   p-4   sm:p-6;
+}
+footer > div {
+  @apply md:flex md:justify-between;
+}
+footer > div > {
+  @apply mb-6 md:mb-0;
+}
+footer > div > a {
+  @apply flex items-center;
+}
+.title-footer {
+  @apply mb-6 text-sm font-semibold uppercase text-gray-900;
+}
+.title-footer ~ ul {
+  @apply text-gray-600;
+}
+.title-footer ~ ul li {
+  @apply mb-4;
 }
